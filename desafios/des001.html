@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Nacionalidade</title>
+</head>
+<body>
+    <h1>Desafio!!!!!</h1>
+    Digite o país que você nasceu <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="verifica()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verifica(){
+           var txt = window.document.querySelector('input#nac')
+           var res = window.document.querySelector('div#res')
+           var rep = (txt.value)
+           var rep = rep.charAt(0).toUpperCase() + rep.slice(1)
+           res.innerHTML = `<p>Você nasceu no país ${rep}</p>`
+           if(rep =='Brasil'){
+             res.innerHTML += "Você é Brasileiro"
+           }else{
+             res.innerHTML += "Você é Gringo"
+           }
+        }
+    </script>
+    
+</body>
+</html>
