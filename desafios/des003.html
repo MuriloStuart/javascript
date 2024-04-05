@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1{
+            text-align: center;
+            padding-top: 10vh;
+        }
+
+        .principal{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .box{
+            width: 500px;
+            height: 300px;
+            background-color:white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+        p{
+            text-align: center
+        }
+
+        div p{
+            text-align: left;
+            padding-left: 5px;
+        }
+        input[type="radio" i] {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <div class="principal">
+        <div class="box">
+            <p>Ano de nascimento <input type="number" name="ano" id="ano"></p>
+            <p>Sexo: Homem: <input type="radio" name="sex"/>Mulher: <input type="radio" name="sex" /></p>
+            <button type="submit">Verificar</button>
+
+        </div>
+    </div>
+    <p><em>@Cursoemvide</em>o</p>
+</body>
+</html>
