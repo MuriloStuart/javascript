@@ -40,7 +40,7 @@
             padding-left: 5px;
         }
         input[type="radio" i] {
-            margin-right: 20px;
+            margin: 0 20px;
         }
     </style>
 </head>
@@ -49,11 +49,25 @@
     <div class="principal">
         <div class="box">
             <p>Ano de nascimento <input type="number" name="ano" id="ano"></p>
-            <p>Sexo: Homem: <input type="radio" name="sex"/>Mulher: <input type="radio" name="sex" /></p>
-            <button type="submit">Verificar</button>
+            <p>Sexo:
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+            <div id="res">
+
+            </div>
 
         </div>
     </div>
+
+    
     <p><em>@Cursoemvide</em>o</p>
+
+   <script src="script.js"></script>
 </body>
 </html>
