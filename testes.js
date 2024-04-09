@@ -1,17 +1,11 @@
-/*
-var c = 1 
-do{
-    console.log('Olá, tudo bem')
-    c++ 
-} while(c <=6)
+let num = [5,8,9,3,100]
+num.sort ((a, b) => a - b)
 
 
-var c = 0
-while (c < 6){
-    console.log('Olá, tudo bem')
-    c++
-}*/
+// for(let pos =0; pos < num.length;pos++){
+//     console.log(`A posição ${pos} tem o valor ${num[pos]}`)
+// }
 
-for(c=1; c<=10; c++){
-    console.log(c)
+for (let pos in num){
+    console.log(num[pos])
 }
